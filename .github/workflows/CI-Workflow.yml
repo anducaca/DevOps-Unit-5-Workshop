@@ -12,3 +12,13 @@ jobs:
       uses: jairogomz/hello-world-javascript-action-by-jairo@v1.0.1
       with:
         who-to-greet: 'Andy Teh CaCa'
+
+    -name: Do the dotnet build
+      run: echo 'doing dotnet build'
+      run: dotnet build
+      run: echo 'dotnet build done'
+
+    -name: Do the dotnet test
+      run: echo 'doing dotnet test'
+      run: dotnet test
+      run: echo 'dotnet test done'
