@@ -9,5 +9,7 @@ jobs:
     - uses: actions/checkout@v4 # Adds a step to checkout the repository code
 
     - name: Hello World
-      run: echo "Hello, World!"  # A simple step that prints Hello, World! to the build log
-      
+      uses: actions/hello-world-javascript-action@1.1
+      with:
+        who-to-greet: 'Andy Teh CaCa"
+        
